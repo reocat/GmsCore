@@ -20,6 +20,10 @@ jobs:
         with:
           distribution: "temurin"
           java-version: "17"
+      - name: Config
+        run: |
+              git config --global user.name "reocat"
+              git config --global user.email "ng.ct_ml@tuta.io"
       - name: "Setup Gradle"
         uses: gradle/actions/setup-gradle@v3
       - name: "Execute Gradle build"
